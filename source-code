@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class FoodDescription {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a food: ");
+        String food = scanner.nextLine();
+
+        switch(food.toLowerCase()) {
+            case "pizza":
+                System.out.println("Pizza is a traditional Italian dish that typically consists of a dough base topped with tomato sauce, cheese, and various toppings.");  
+                break;
+            case "sushi":
+                System.out.println("Sushi is a Japanese dish consisting of small balls or rolls of vinegar-flavored cold cooked rice served with a garnish of raw fish, vegetables, or egg.");
+                break;
+            case "taco":
+                System.out.println("A taco is a traditional Mexican dish consisting of a corn or wheat tortilla filled with various ingredients, such as meat, beans, vegetables, and cheese.");
+                break;
+            default:
+                System.out.println("Sorry, I don't have a description for that food.");
+                break;
+        }
+    }
+}
